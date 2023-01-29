@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #1B263B;
+    --fg-color: #415A77;
+    --text-color: #E0E1DD;
+    --highlight-color: #778DA9;
+}
+
+* {padding: 0; margin: 0; color: var(--text-color); font-family: 'Nunito'}
+body { background-color: var(--bg-color); }
+
+#Navbar {
+    width: 100%;
+    padding: 0;
+    background-color: var(--fg-color);
+    min-height: 50px;
+}
+.nav-title {
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 20px; 
+    cursor: pointer;
+}
+.nav-list {
+    float: right;
+    padding-top: 0px;
+}
+.nav-item a {
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+}
+.nav-item {
+    display: inline-block;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 20px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.nav-item:hover {
+    background-color: var(--highlight-color);
+}
+
+.hero-container {
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+    overflow: hidden;
+
+    text-align: center;
+}
+.hero-container h1 {
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'helvetica';
+}
+.hero-title { margin-top: 50px; }
+.hero-info-container {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 50px black;
+        box-shadow: 0 0 50px black;
+}
+.large-button {
+    margin-top: 20px;
+    padding: 15px 25px 15px 25px;
+    background-color: var(--fg-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 32px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.large-button:hover {
+    background-color: var(--highlight-color);
+    border-color: white;
+}
+
+.form-container {
+    text-align: center;
+    margin:auto;
+    background-color: rgba(13, 27, 42, 0.85);
+    width: fit-content;
+    padding: 50px 100px 50px 100px;
+    border-radius: 10px;
+    margin-top: 100px;
+    border: 2px solid black;
+}
+.form-container input {
+    color: black;
+}
+
+.alert {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    margin-top: 20px;
+    list-style: none;
+}
+.alert ul li{
+    background-color:rgba(13, 27, 42, 0.85);
+    color: red;
+    font-weight: 200;
+    list-style: none;
+}

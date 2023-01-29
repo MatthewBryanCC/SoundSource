@@ -1,0 +1,137 @@
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+
+
+#Dashboard {
+    width: 70vw;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+
+}
+#Dashboard-Content {
+    background-color:  var(--highlight-color);
+    border: 5px solid  var(--highlight-color)   ;
+    border-radius: 10px;
+    min-height: 50vh;
+    max-height: 75vh;
+}
+.dashboard-tabs-item {
+    padding: 20px;
+    margin: 0;
+    display: inline-block;
+    background-color: var(--fg-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.dashboard-tabs-item.active {
+    background-color: var(--highlight-color);
+}
+.dashboard-tabs-item:hover {
+    background-color: var(--highlight-color);
+}
+.dash-icon {
+    margin-right: 5px !important;
+}
+
+.no-items-message {
+    max-width: 200px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 10px 15px black;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+#ModalClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1px 5px 2px 7px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--fg-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#ModalClose:hover {
+    background-color: var(--highlight-color);
+}
+
+.upload-container {
+    margin-top: 200px;
+    position: relative;
+}
+.dashboard-list-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-align: left !important;
+}
+.dashboard-list-item p { display: inline-block; margin-left: 20px; }
+.dashboard-list-item:hover {
+    background-color: var(--bg-color);
+}
+.list-item-form {
+    float: right;
+}
+.dashboard-list {
+    list-style: none;
+    margin-top: 10px;
+}
+.dashboard-list li:nth-child(2n) {
+    background-color: var(--fg-color);
+}
+.dashboard-list li:nth-child(2n):hover {
+    background-color: var(--bg-color);
+}
+.play-button {
+    margin-right: 20px;
+    float: right;
+    padding: 5px 6px 5px 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.play-button:hover { background-color: var(--highlight-color); }
+.trash-button {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-top: 1px;
+    border-radius: 10px;
+    padding: 5px 7px 5px 7px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.trash-button:hover { background-color: var(--highlight-color); }
+
+.spin {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
